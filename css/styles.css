@@ -515,8 +515,9 @@ img {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-}
 
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -547,7 +548,13 @@ img {
   cursor: pointer;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 /*====END==Backdrop==========*/
+/*=======END==Index==========*/
 /*=============================*/
 /*******************************/
 /*==============================*/
